@@ -1,0 +1,32 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title= locals.title
+  body
+    p
+      | The following will display a list of article titles. These titles are from
+      | articles that contain the specified tag in config.json.
+    p
+      h2 Tag: #{ tag }
+    for article in articles
+      ul
+        li= article.title
+
+    p
+      | The previous and next page links. The links themselves may not point to the
+      | actual location if you are running this example build, but the pages are
+      | generated.
+    if prevPage
+      span.index-nav-left
+        a(href='#{ prevPage.url }') &#8592;
+    else
+      span.index-nav-left &#8592;
+
+    if nextPage
+      span.index-nav-right
+        a(href='#{ nextPage.url }') &#8594;
+    else
+      span.index-nav-right &#8594;
+
+

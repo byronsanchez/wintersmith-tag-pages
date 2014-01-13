@@ -1,0 +1,15 @@
+{
+  "plugins": [
+    "./../index-dev.js"
+  ],
+  "locals": {
+    "title": "Tag Pages Example"
+  },
+  "tagPages": {
+    "perPage": 1,
+    "filter": [
+      "here"
+      ],
+    "template": "tags.jade"
+  }
+}
