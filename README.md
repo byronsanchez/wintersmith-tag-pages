@@ -37,19 +37,21 @@ Simply add a `tagPages` configuration object hash in `config.json`:
       "perPage": 2
     }
 
-### Configuration Options
+### Options
 
 The following is a list of all available options. You can define these in the 
 `tagPages` configuration object hash.
 
-  - template - The template file that will be used to generate the actual tag 
-    pages
-  - first - permalink for the first page in each tag index
-  - filename -  permalink for every subsequent tag index page
-  - filter - a string array of tags to generate tag pages for; if empty, it the 
-    plugin will generate tag pages for every tag used across all articles
-  - perPage - A number specifying how many articles to display on each page of 
-    each tag index
+Name         | Default                | Description
+-------------|------------------------|-----------------------------------------------
+template     | `tags.jade`            | template file to generate the tag pages
+first        | `tag/%t/index.html`    | permalink for the first page in each tag index
+filename     | `tag/%t/%d/index.html` | permalink for every subsequent tag page 
+filter       | `[]`                   | array of tags to generate pages for; if empty, pages for all tags will be generated
+perPage      | `2`                    | number of articles to display for each tag page
+
+- %t - The tag name
+- %d - The page number
 
 ## Usage
 
