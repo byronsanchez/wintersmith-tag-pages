@@ -30,8 +30,8 @@ In your `config.json` file, you must define the location of the plugin:
 
 ## Configuration
 
-You may configure the location of the contents that get retrieved by adding a
-`tagPages` object hash in `config.json`:
+You may configure how the tag page generators creates the tag index pages.  
+Simply add a `tagPages` configuration object hash in `config.json`:
 
     "tagPages": {
       "perPage": 2
