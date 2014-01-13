@@ -1,0 +1,8 @@
+{
+  "plugins": [
+    "./../index-dev.js"
+  ],
+  "locals": {
+    "title": "Tag Pages Example"
+  }
+}
