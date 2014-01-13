@@ -1,0 +1,34 @@
+{
+  "name": "wintersmith-tag-pages",
+  "version": "0.1.0",
+  "author": "Byron Sanchez <hackBytes.com>",
+  "description": "Wintersmith plugin for generating tag pages",
+  "license": "GPL-2.0",
+  "keywords": [
+    "wintersmith",
+    "tag",
+    "pages",
+    "wintersmith-tag-pages"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/byronsanchez/wintersmith-tag-pages.git"
+  },
+  "main": "lib/",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "coffee-script": "1.6.x",
+    "path": "0.4.x",
+    "wintersmith": "2.x",
+    "mocha": "1.17.x",
+    "chai": "1.8.x"
+  },
+  "peerDependencies": {
+    "wintersmith": "2.x"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha",
+    "prepublish": "./bin/compile"
+  }
+}
