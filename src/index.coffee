@@ -97,6 +97,7 @@ module.exports = (env, callback) ->
 
   env.registerGenerator 'tags', (contents, callback) ->
     articles = contents['articles']._.directories.map (item) -> item.index
+    articles.sort (a, b) -> b.date - a.date
     tags = TagPage.retrieveListOfAllTagsUsedByArticles(articles, options)
     pages = TagPage.createObjectContainingAllTagPages(tags, articles, options)
     rv = TagPage.createObjectToBeMergedWithContentTree(tags, pages)

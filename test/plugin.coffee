@@ -39,6 +39,7 @@ describe "wintersmith-tag-pages", ->
       loadedData = result
       expect(loadedData.contents).to.be.an.instanceOf(wintersmith.ContentTree)
       articles = loadedData.contents['articles']._.directories.map (item) -> item.index
+      articles.sort (a, b) -> b.date - a.date
       expect(articles).to.be.an('array')
       TagPage = env.helpers.TagPage
       options = {}
