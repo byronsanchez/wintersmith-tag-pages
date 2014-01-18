@@ -1,6 +1,6 @@
 {
   "name": "wintersmith-tag-pages",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Byron Sanchez <hackBytes.com>",
   "description": "Wintersmith plugin for generating tag pages",
   "license": "GPL-2.0",
