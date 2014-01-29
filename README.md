@@ -1,5 +1,9 @@
 # wintersmith-tag-pages
 
+[![Build Status](https://secure.travis-ci.org/byronsanchez/wintersmith-tag-pages.png?branch=develop)][travis]
+
+[travis]: https://travis-ci.org/byronsanchez/wintersmith-tag-pages
+
 wintersmith-tag-pages is a plugin that generates tag page indexes for either:
 
   - every tag used in every article
